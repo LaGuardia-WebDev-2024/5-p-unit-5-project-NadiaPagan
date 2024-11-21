@@ -1,13 +1,13 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
+[x] <div> and <span>
+[x] height: and width:
+[x] margin: and padding: 
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
@@ -16,17 +16,129 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>ducks</title>
+        <style>
+          .ducks{color:yellow}
+      
+          #info {background-color: rgb(240, 192, 223);
+          width:50%;
+hight:180px;
+          overflow: auto;
+          margin:auto;
+          border:50px double rgb(245, 7, 162)}
+  
+             
+          
+        </style>
+    </head>
+    <body>
 
+       <div id='info'> 
+         <h1>Ducks</h1>
+        
+        <p>what is so great about <span class='ducks'>ducks</span>? they are highly intelligent and emotional creatures. They can understand commands, play with toys, play games, give kisses, and beg for snuggles like other birds if you take the time to work with them. If handled frequently and gently from an early age, ducks will become quite sociable with people.</p>
+
+        <p>DUCKS<div>
+         
+         </div> Ducks are well adapted for water, land, and air activities. These gifted swimmers have waterproof feathers, which have a waxy coating that protects an inner layer of down, to keep them warm and dry.</p>
+        
+        <a href="https://en.wikipedia.org/wiki/Duck">Read more on Ducks</a>
+   
+      </div>
+  <p>
+    boy ducks have bright colored feathers to atract a mate
+  </p>
+ <img src="https://i.natgeofe.com/k/7ce14b7f-df35-4881-95ae-650bce0adf4d/mallard-male-standing_square.jpg" width="150">
+  <p>
+    girl ducks have brown feathers and often look for a mate with bright blue/green feathers
+  </p>
+    
+    <img src="https://www.allaboutbirds.org/guide/assets/photo/300190601-480px.jpg" width="200">
+  <p>
+    this is a baby duck that hasnt developed his bright feathers yet
+  </p>
+    
+    <img src="https://www.corneliustoday.com/wp-content/uploads/2020/05/hqdefault.jpg" width="200">
+
+
+  <h1>Ducks</h1>
+<h3>Hover over the image below to learn more:</h3>
+
+<html>
 <head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  </style>
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #8cf0ff;
+  color: rgb(164, 245, 231);
+}
+
+.flip-card-back {
+  background-color: #ff8ccd;
+  color: pink;
+  transform: rotateY(180deg);
+}
+</style>
 </head>
 <body>
 
- 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i0.wp.com/natureinnovato.com/wp-content/uploads/2018/06/Mallard-Pieter-Pieterse-6x4.jpg?ssl=1" alt="duckAvatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Ducks</h1> 
+      <p>This is another baby duck</p> 
+      <p>he is really cute</p>
+    </div>
+  </div>
+</div>
+  
+  
+  
 
 </body>
 </html>
+
+
+    </body>
+</html>
+
+
